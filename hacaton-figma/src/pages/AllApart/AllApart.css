@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.allapart {
+	background: #f5f6fb;
+	min-height: 100vh;
+	padding: 60px 0 80px;
+	font-family: 'Montserrat', 'Segoe UI', system-ui, -apple-system, sans-serif;
+	color: #202333;
+}
+
+.allapart__container {
+	width: min(1180px, 90%);
+	margin: 0 auto;
+}
+
+.allapart__header {
+	margin-bottom: 32px;
+}
+
+.allapart__header h1 {
+	font-size: clamp(28px, 4vw, 36px);
+	color: #1f3c90;
+}
+
+.allapart__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 26px;
+}
+
+.apartment-card {
+	background: #ffffff;
+	border-radius: 24px;
+	box-shadow: 0 25px 50px rgba(31, 48, 92, 0.08);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.apartment-card__image img {
+	display: block;
+	width: 100%;
+	height: 190px;
+	object-fit: cover;
+}
+
+.apartment-card__body {
+	padding: 22px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.apartment-card h3 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #202333;
+}
+
+.apartment-card__description {
+	font-size: 14px;
+	color: rgba(32, 35, 51, 0.7);
+	line-height: 1.4;
+	height: 60px;
+	overflow: hidden;
+}
+
+.apartment-card__info {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #ff7a18;
+}
+
+.apartment-card__price {
+	font-size: 20px;
+	color: #ff7a18;
+}
+
+.apartment-card__period {
+	color: #2563eb;
+}
+
+.apartment-card__location {
+	font-size: 14px;
+	color: #2e3c61;
+	padding-left: 20px;
+	position: relative;
+}
+
+.apartment-card__location::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 12px;
+	height: 12px;
+	background: url('data:image/svg+xml,%3Csvg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M6 11.25s3.75-3.287 3.75-6.25A3.75 3.75 0 0 0 6 1.25 3.75 3.75 0 0 0 2.25 5c0 2.963 3.75 6.25 3.75 6.25Z" stroke="%232563eb" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/%3E%3Ccircle cx="6" cy="5" r="1.2" fill="%232563eb"/%3E%3C/svg%3E')
+		center/contain no-repeat;
+}
+
+.apartment-card__button {
+	margin-top: auto;
+	align-self: flex-start;
+	padding: 10px 24px;
+	border: none;
+	border-radius: 999px;
+	background: #ffb347;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	box-shadow: 0 14px 30px rgba(255, 147, 67, 0.35);
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.apartment-card__button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 18px 40px rgba(255, 147, 67, 0.5);
+	background: #ff9a1f;
+}
+
+.apartment-card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apartment-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 30px 60px rgba(31, 48, 92, 0.12);
+}
+
+/* Адаптивность для планшетов (768px - 1024px) */
+@media (max-width: 1024px) {
+	.allapart {
+		padding: 50px 0 70px;
+	}
+
+	.allapart__container {
+		width: min(1180px, 95%);
+	}
+
+	.allapart__grid {
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 24px;
+	}
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+	.allapart {
+		padding: 40px 0 60px;
+	}
+
+	.allapart__container {
+		width: min(1180px, 92%);
+	}
+
+	.allapart__header {
+		margin-bottom: 28px;
+	}
+
+	.allapart__header h1 {
+		font-size: clamp(24px, 5vw, 32px);
+	}
+
+	.allapart__grid {
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 20px;
+	}
+
+	.apartment-card__image img {
+		height: 180px;
+	}
+
+	.apartment-card__body {
+		padding: 20px;
+	}
+
+	.apartment-card h3 {
+		font-size: 17px;
+	}
+
+	.apartment-card__description {
+		font-size: 13px;
+		height: 55px;
+	}
+
+	.apartment-card__price {
+		font-size: 18px;
+	}
+
+	.apartment-card__button {
+		padding: 8px 16px;
+		font-size: 13px;
+		width: auto;
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.allapart {
+		padding: 30px 0 50px;
+	}
+
+	.allapart__container {
+		width: min(1180px, 90%);
+	}
+
+	.allapart__header {
+		margin-bottom: 24px;
+	}
+
+	.allapart__header h1 {
+		font-size: 22px;
+	}
+
+	.allapart__grid {
+		grid-template-columns: 1fr;
+		gap: 18px;
+	}
+
+	.apartment-card__image img {
+		height: 170px;
+	}
+
+	.apartment-card__body {
+		padding: 18px;
+		gap: 10px;
+	}
+
+	.apartment-card h3 {
+		font-size: 16px;
+	}
+
+	.apartment-card__description {
+		font-size: 12px;
+		height: 50px;
+	}
+
+	.apartment-card__info {
+		font-size: 14px;
+	}
+
+	.apartment-card__price {
+		font-size: 17px;
+	}
+
+	.apartment-card__button {
+		padding: 7px 14px;
+		font-size: 12px;
+		width: auto;
+	}
+}
+
+
+

@@ -1,0 +1,152 @@
+.amenities {
+	margin-top: 40px;
+	padding-top: 40px;
+	border-top: 1px solid #e5e7eb;
+}
+
+.amenities__title {
+	font-size: 22px;
+	font-weight: 700;
+	color: #1f2432;
+	margin: 0 0 24px 0;
+}
+
+.amenities__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 16px 32px;
+	margin-bottom: 24px;
+}
+
+.amenities__column {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.amenities__additional {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.amenities__item {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	font-size: 16px;
+	color: #2e3c61;
+	line-height: 1.5;
+}
+
+.amenities__bullet {
+	color: #ffb347;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+	flex-shrink: 0;
+}
+
+.amenities__item {
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.amenities__item:hover {
+	transform: translateX(5px);
+	color: #1f3c90;
+}
+
+.amenities__bullet {
+	transition: transform 0.3s ease;
+}
+
+.amenities__item:hover .amenities__bullet {
+	transform: scale(1.2);
+}
+
+/* Адаптивность для планшетов (768px - 1024px) */
+@media (max-width: 1024px) {
+	.amenities {
+		margin-top: 35px;
+		padding-top: 35px;
+	}
+
+	.amenities__title {
+		font-size: 21px;
+		margin-bottom: 20px;
+	}
+
+	.amenities__grid {
+		gap: 14px 28px;
+	}
+
+	.amenities__item {
+		font-size: 15px;
+	}
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+	.amenities {
+		margin-top: 30px;
+		padding-top: 30px;
+	}
+
+	.amenities__grid {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.amenities__title {
+		font-size: 20px;
+		margin-bottom: 18px;
+	}
+
+	.amenities__item {
+		font-size: 14px;
+	}
+
+	.amenities__bullet {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 480px) {
+	.amenities {
+		margin-top: 25px;
+		padding-top: 25px;
+	}
+
+	.amenities__title {
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
+
+	.amenities__grid {
+		gap: 14px;
+	}
+
+	.amenities__column {
+		gap: 10px;
+	}
+
+	.amenities__additional {
+		gap: 10px;
+	}
+
+	.amenities__item {
+		font-size: 13px;
+		gap: 10px;
+	}
+
+	.amenities__bullet {
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,385 @@
+.soobsh {
+	width: 100%;
+	max-width: 1510px;
+	min-height: 260px;
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: padding 0.3s ease;
+}
+
+.soobsh h1 {
+	color: rgba(43, 122, 241, 1);
+	font-weight: 700;
+	position: absolute;
+	left: 30px;
+	top: 0;
+	transition: font-size 0.3s ease, left 0.3s ease;
+}
+
+.soobsh-card {
+	position: absolute;
+	left: 100px;
+	top: 70px;
+	width: 393px;
+	height: 452px;
+	border-radius: 10px;
+	border: 1px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.1);
+	z-index: 5;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.3s ease, height 0.3s ease, left 0.3s ease, top 0.3s ease;
+}
+
+.soobsh-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 0 50px 15px rgba(0, 0, 0, 0.15);
+}
+
+.inputIma {
+	font-size: 16px;
+	width: 290px;
+	height: 25px;
+	font-weight: 400;
+	border-radius: 10px;
+	border: 1px inset rgba(17, 17, 17, 0.5);
+	padding: 10px 20px;
+	margin-left: 30px;
+	margin-top: 95px;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease;
+	box-sizing: border-box;
+}
+
+.inputIma:focus {
+	outline: none;
+	border-color: rgba(43, 122, 241, 0.8);
+	box-shadow: 0 0 0 3px rgba(43, 122, 241, 0.1);
+}
+
+.inputEmailss {
+	width: 290px;
+	height: 25px;
+	font-size: 16px;
+	padding: 10px 20px;
+	font-weight: 400;
+	border-radius: 10px;
+	border: 1px inset rgba(17, 17, 17, 0.5);
+	margin-top: 15px;
+	margin-left: 30px;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease;
+	box-sizing: border-box;
+}
+
+.inputEmailss:focus {
+	outline: none;
+	border-color: rgba(43, 122, 241, 0.8);
+	box-shadow: 0 0 0 3px rgba(43, 122, 241, 0.1);
+}
+
+.inputTextt {
+	width: 290px;
+	height: 115px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 10px;
+	border: 1px inset rgba(17, 17, 17, 0.5);
+	margin-top: 15px;
+	margin-left: 30px;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease, width 0.3s ease;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+.inputTextt:focus {
+	outline: none;
+	border-color: rgba(43, 122, 241, 0.8);
+	box-shadow: 0 0 0 3px rgba(43, 122, 241, 0.1);
+}
+
+.soobsh-btn {
+	position: absolute;
+	left: 120px;
+	top: 375px;
+	width: 152px;
+	height: 50px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+
+	background: linear-gradient(
+		90deg,
+		rgba(255, 122, 0, 1),
+		rgba(255, 176, 57, 1)
+	);
+
+	box-shadow: 0px 4px 10px rgba(17, 17, 17, 0.1);
+
+	transition: all 0.2s ease;
+}
+
+.soobsh-btn:hover {
+	background: linear-gradient(
+		90deg,
+		rgba(221, 106, 0, 1),
+		rgba(249, 152, 6, 1)
+	);
+	transform: translateY(-1px);
+	box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.soobsh-btn:active {
+	transform: scale(0.97);
+
+	background: linear-gradient(
+		90deg,
+		rgba(221, 106, 0, 1),
+		rgba(249, 152, 6, 1)
+	);
+
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.soobsh-text p {
+	color: rgba(17, 17, 17, 1);
+	font-weight: 400;
+	font-size: 18px;
+}
+.director p {
+	color: rgba(17, 17, 17, 1);
+	font-weight: 400;
+	font-size: 16px;
+}
+.director h4 {
+	font-weight: 700;
+	font-size: 18px;
+	color: rgba(43, 122, 241, 1);
+}
+
+.soobsh-text {
+	position: absolute;
+	top: 90px;
+	left: 600px;
+	transition: left 0.3s ease, top 0.3s ease;
+}
+
+.soobsh-text img {
+	position: absolute;
+	left: -35px;
+	top: -18px;
+	transition: transform 0.3s ease;
+}
+
+.soobsh-text:hover img {
+	transform: scale(1.05);
+}
+
+/* Адаптивность для планшетов (768px - 1024px) */
+@media (max-width: 1024px) {
+	.soobsh {
+		padding: 15px;
+		min-height: 240px;
+	}
+
+	.soobsh h1 {
+		font-size: 32px;
+		left: 20px;
+	}
+
+	.soobsh-card {
+		left: 50px;
+		top: 60px;
+		width: 360px;
+		height: 420px;
+	}
+
+	.inputIma,
+	.inputEmailss,
+	.inputTextt {
+		width: 260px;
+		margin-left: 25px;
+	}
+
+	.inputIma {
+		margin-top: 85px;
+	}
+
+	.soobsh-btn {
+		left: 110px;
+		top: 350px;
+	}
+
+	.soobsh-text {
+		left: 500px;
+		top: 80px;
+	}
+
+	.soobsh-text p {
+		font-size: 16px;
+	}
+
+	.director p {
+		font-size: 15px;
+	}
+
+	.director h4 {
+		font-size: 17px;
+	}
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+	.soobsh {
+		padding: 15px;
+		min-height: auto;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.soobsh h1 {
+		position: relative;
+		left: 0;
+		font-size: 28px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.soobsh-card {
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+		max-width: 450px;
+		height: auto;
+		min-height: 400px;
+		margin: 0 auto;
+	}
+
+	.inputIma,
+	.inputEmailss,
+	.inputTextt {
+		width: calc(100% - 60px);
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.inputIma {
+		margin-top: 80px;
+	}
+
+	.inputTextt {
+		height: 100px;
+	}
+
+	.soobsh-btn {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		margin-top: 20px;
+		width: 180px;
+	}
+
+	.soobsh-text {
+		position: relative;
+		left: 0;
+		top: 0;
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.soobsh-text img {
+		position: relative;
+		left: 0;
+		top: 0;
+		margin-bottom: 15px;
+	}
+
+	.soobsh-text p {
+		font-size: 15px;
+		text-align: justify;
+	}
+
+	.director {
+		margin-top: 20px;
+	}
+
+	.director p {
+		font-size: 14px;
+	}
+
+	.director h4 {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.soobsh {
+		padding: 12px;
+		gap: 25px;
+	}
+
+	.soobsh h1 {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+
+	.soobsh-card {
+		max-width: 100%;
+		min-height: 380px;
+		border-radius: 8px;
+	}
+
+	.inputIma,
+	.inputEmailss,
+	.inputTextt {
+		width: calc(100% - 40px);
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 14px;
+		padding: 8px 16px;
+	}
+
+	.inputIma {
+		margin-top: 70px;
+		height: 22px;
+	}
+
+	.inputEmailss {
+		height: 22px;
+	}
+
+	.inputTextt {
+		height: 90px;
+		font-size: 14px;
+	}
+
+	.soobsh-btn {
+		width: 160px;
+		height: 45px;
+		font-size: 14px;
+		margin-top: 15px;
+	}
+
+	.soobsh-text {
+		padding: 0 15px;
+	}
+
+	.soobsh-text p {
+		font-size: 14px;
+	}
+
+	.director p {
+		font-size: 13px;
+	}
+
+	.director h4 {
+		font-size: 15px;
+	}
+}

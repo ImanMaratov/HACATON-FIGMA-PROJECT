@@ -1,0 +1,191 @@
+.apartment-details {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.apartment-details__title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #1f2432;
+	margin: 0;
+	line-height: 1.3;
+}
+
+.apartment-details__description {
+	font-size: 16px;
+	color: #2e3c61;
+	line-height: 1.6;
+	margin: 0;
+}
+
+.apartment-details__price {
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+}
+
+.apartment-details__price-value {
+	font-size: 32px;
+	font-weight: 700;
+	color: #1f2432;
+}
+
+.apartment-details__price-period {
+	font-size: 18px;
+	color: #2e3c61;
+	font-weight: 500;
+}
+
+.apartment-details__address {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 16px;
+	color: #2e3c61;
+	font-weight: 500;
+}
+
+.apartment-details__pin {
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.apartment-details__book-btn {
+	padding: 16px 32px;
+	background: linear-gradient(135deg, #ff7a18 0%, #ffb347 100%);
+	color: #ffffff;
+	border: none;
+	border-radius: 30px;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+	box-shadow: 0 8px 20px rgba(255, 122, 24, 0.35);
+	align-self: flex-start;
+	margin-top: 8px;
+}
+
+.apartment-details__book-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 12px 28px rgba(255, 122, 24, 0.45);
+	background: linear-gradient(135deg, #ff8a2e 0%, #ffc366 100%);
+}
+
+.apartment-details__book-btn:active {
+	transform: translateY(0);
+}
+
+.apartment-details {
+	transition: gap 0.3s ease;
+}
+
+.apartment-details__title {
+	transition: font-size 0.3s ease;
+}
+
+.apartment-details__description {
+	transition: font-size 0.3s ease;
+}
+
+.apartment-details__price-value {
+	transition: font-size 0.3s ease;
+}
+
+/* Адаптивность для планшетов (768px - 1024px) */
+@media (max-width: 1024px) {
+	.apartment-details__title {
+		font-size: 22px;
+	}
+
+	.apartment-details__price-value {
+		font-size: 30px;
+	}
+
+	.apartment-details__price-period {
+		font-size: 16px;
+	}
+
+	.apartment-details__book-btn {
+		padding: 14px 28px;
+		font-size: 16px;
+	}
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+	.apartment-details {
+		gap: 18px;
+	}
+
+	.apartment-details__title {
+		font-size: 20px;
+	}
+
+	.apartment-details__description {
+		font-size: 15px;
+	}
+
+	.apartment-details__price-value {
+		font-size: 28px;
+	}
+
+	.apartment-details__price-period {
+		font-size: 16px;
+	}
+
+	.apartment-details__address {
+		font-size: 15px;
+	}
+
+	.apartment-details__book-btn {
+		width: 100%;
+		padding: 14px 28px;
+		font-size: 16px;
+		align-self: stretch;
+	}
+}
+
+@media (max-width: 480px) {
+	.apartment-details {
+		gap: 16px;
+	}
+
+	.apartment-details__title {
+		font-size: 18px;
+	}
+
+	.apartment-details__description {
+		font-size: 14px;
+	}
+
+	.apartment-details__price-value {
+		font-size: 24px;
+	}
+
+	.apartment-details__price-period {
+		font-size: 15px;
+	}
+
+	.apartment-details__address {
+		font-size: 14px;
+	}
+
+	.apartment-details__pin {
+		width: 18px;
+		height: 18px;
+	}
+
+	.apartment-details__book-btn {
+		padding: 12px 24px;
+		font-size: 15px;
+	}
+}
+
+
+
+
+
+
+
