@@ -1,0 +1,432 @@
+.otzyv-wrapper {
+	width: 100%;
+	min-height: 420px;
+	background: #1e88ff;
+	padding: 40px 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.otzyv-container {
+	width: 100%;
+	max-width: 1185px;
+	position: relative;
+}
+
+.otzyv-title {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0 0 32px 0;
+	position: relative;
+	z-index: 2;
+}
+
+.otzyv-quotes {
+	position: absolute;
+	top: -30px;
+	right: 30px;
+	font-size: 280px;
+	color: #fcac00;
+	font-family: Georgia, serif;
+	line-height: 1;
+	opacity: 0.85;
+	z-index: 1;
+	font-weight: bold;
+	user-select: none;
+	transform: scaleY(1.2);
+	letter-spacing: -20px;
+}
+
+
+.otzyv-slider {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.otzyv-cards {
+	display: flex;
+	gap: 24px;
+	width: 100%;
+	position: relative;
+	justify-content: center;
+}
+
+.otzyv-card {
+	background: white;
+	border-radius: 10px;
+	padding: 24px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	flex: 1;
+	max-width: 500px;
+	min-height: 280px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.otzyv-card-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 16px;
+	gap: 12px;
+}
+
+.otzyv-card-title {
+	font-size: 18px;
+	color: #1e88ff;
+	margin: 0;
+	font-weight: 600;
+	flex: 1;
+}
+
+.otzyv-stars {
+	display: flex;
+	gap: 4px;
+	flex-shrink: 0;
+}
+
+.otzyv-stars svg {
+	width: 18px;
+	height: 18px;
+}
+
+.otzyv-text {
+	font-size: 14px;
+	color: #333;
+	line-height: 1.6;
+	margin: 0 0 20px 0;
+	flex: 1;
+}
+
+.otzyv-card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: auto;
+}
+
+.otzyv-author-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.otzyv-author {
+	font-size: 14px;
+	color: #1e88ff;
+	font-weight: 500;
+}
+
+.otzyv-city {
+	font-size: 12px;
+	color: #666;
+}
+
+.otzyv-date {
+	font-size: 12px;
+	color: #666;
+	white-space: nowrap;
+}
+
+.otzyv-btn {
+	width: 40px;
+	height: 40px;
+	color: white;
+	border-radius: 50%;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 28px;
+	font-weight: bold;
+	transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+	background-color: #fcac00;
+	z-index: 10;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.otzyv-btn:hover {
+	transform: translateY(-50%) scale(1.1);
+	background-color: #ff9500;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.otzyv-btn:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.otzyv-card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.otzyv-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.otzyv-dot {
+	transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.otzyv-dot:hover {
+	transform: scale(1.2);
+}
+
+/* Адаптивность для планшетов (768px - 1024px) */
+@media (max-width: 1024px) {
+	.otzyv-wrapper {
+		padding: 35px 28px;
+		min-height: 380px;
+	}
+
+	.otzyv-title {
+		font-size: 22px;
+		margin-bottom: 28px;
+	}
+
+	.otzyv-quotes {
+		font-size: 240px;
+		top: -25px;
+		right: 25px;
+	}
+
+	.otzyv-cards {
+		gap: 20px;
+	}
+
+	.otzyv-card {
+		padding: 20px;
+		min-height: 260px;
+		max-width: 450px;
+	}
+
+	.otzyv-card-title {
+		font-size: 17px;
+	}
+
+	.otzyv-text {
+		font-size: 13px;
+	}
+
+	.otzyv-btn {
+		width: 36px;
+		height: 36px;
+		font-size: 24px;
+	}
+
+	.otzyv-prev {
+		left: -15px;
+	}
+
+	.otzyv-next {
+		right: -15px;
+	}
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+	.otzyv-wrapper {
+		padding: 30px 20px;
+		min-height: 360px;
+	}
+
+	.otzyv-container {
+		max-width: 100%;
+	}
+
+	.otzyv-title {
+		font-size: 20px;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	.otzyv-quotes {
+		font-size: 180px;
+		top: -20px;
+		right: 15px;
+		opacity: 0.7;
+	}
+
+	.otzyv-slider {
+		flex-direction: column;
+	}
+
+	.otzyv-cards {
+		flex-direction: column;
+		gap: 16px;
+		width: 100%;
+	}
+
+	.otzyv-card {
+		max-width: 100%;
+		min-height: auto;
+		padding: 18px;
+	}
+
+	.otzyv-card-title {
+		font-size: 16px;
+	}
+
+	.otzyv-text {
+		font-size: 13px;
+		margin-bottom: 16px;
+	}
+
+	.otzyv-stars svg {
+		width: 16px;
+		height: 16px;
+	}
+
+	.otzyv-author {
+		font-size: 13px;
+	}
+
+	.otzyv-city,
+	.otzyv-date {
+		font-size: 11px;
+	}
+
+	.otzyv-btn {
+		width: 32px;
+		height: 32px;
+		font-size: 20px;
+		position: relative;
+		top: auto;
+		transform: none;
+		display: inline-flex;
+		margin: 0 8px;
+	}
+
+	.otzyv-prev,
+	.otzyv-next {
+		left: auto;
+		right: auto;
+		position: relative;
+	}
+
+	.otzyv-btn:hover {
+		transform: scale(1.1);
+	}
+
+	.otzyv-dots {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.otzyv-wrapper {
+		padding: 25px 15px;
+		min-height: 340px;
+	}
+
+	.otzyv-title {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+
+	.otzyv-quotes {
+		font-size: 140px;
+		top: -15px;
+		right: 10px;
+		opacity: 0.6;
+	}
+
+	.otzyv-cards {
+		gap: 14px;
+	}
+
+	.otzyv-card {
+		padding: 16px;
+	}
+
+	.otzyv-card-title {
+		font-size: 15px;
+	}
+
+	.otzyv-text {
+		font-size: 12px;
+		margin-bottom: 14px;
+	}
+
+	.otzyv-stars svg {
+		width: 14px;
+		height: 14px;
+	}
+
+	.otzyv-author {
+		font-size: 12px;
+	}
+
+	.otzyv-city,
+	.otzyv-date {
+		font-size: 10px;
+	}
+
+	.otzyv-btn {
+		width: 28px;
+		height: 28px;
+		font-size: 18px;
+		margin: 0 6px;
+	}
+
+	.otzyv-dot {
+		width: 8px;
+		height: 8px;
+	}
+
+	.otzyv-dots {
+		gap: 8px;
+		margin-top: 18px;
+	}
+}
+
+.otzyv-prev {
+	left: -20px;
+}
+
+.otzyv-next {
+	right: -20px;
+}
+
+.otzyv-dots {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 24px;
+}
+
+.otzyv-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	border: 2px solid white;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.otzyv-dot.active {
+	background: #fcac00;
+	border-color: #fcac00;
+}
+
+.otzyv-dot:hover {
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.otzyv-dot.active:hover {
+	background: #ff9500;
+	border-color: #ff9500;
+}
