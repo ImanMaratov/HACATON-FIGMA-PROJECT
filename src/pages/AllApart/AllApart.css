@@ -193,9 +193,9 @@
 	}
 
 	.apartment-card__button {
-		padding: 9px 20px;
-		font-size: 14px;
-		width: 80%;
+		padding: 8px 16px;
+		font-size: 13px;
+		width: auto;
 		text-align: center;
 	}
 }
@@ -249,8 +249,9 @@
 	}
 
 	.apartment-card__button {
-		padding: 8px 18px;
-		font-size: 13px;
+		padding: 7px 14px;
+		font-size: 12px;
+		width: auto;
 	}
 }
 
